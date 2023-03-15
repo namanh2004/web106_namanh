@@ -1,0 +1,19 @@
+@media screen and (max-width : 480px){
+    body {
+        font-size: 100x;
+    }
+
+    img{
+        max-width: 100%;
+        height :auto;
+
+    }
+    .noidung{
+        padding : 5px;
+    }
+    div{
+        text-align: left;
+    }
+    
+}
+
