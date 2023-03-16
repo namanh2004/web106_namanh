@@ -1,0 +1,12 @@
+.box{
+    background-color: #EEEEEE ;
+    display: flex;
+    
+   
+    
+}
+.box-item{
+    padding: 150px;
+   border: 10px solid white;
+   text-align: center;
+}
