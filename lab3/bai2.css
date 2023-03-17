@@ -1,4 +1,4 @@
-@media  (max-witdh: 600px){
+@media  (max-width: 600px){
     .all{
      flex-wrap:wrap;   
         }
