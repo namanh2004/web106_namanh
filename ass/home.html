@@ -2,245 +2,284 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+  box-sizing:border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  padding: 64px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+.large-font {
+  font-size: 48px;
+}
+.xlarge-font {
+  font-size: 64px
+}
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+  </style>
 </head>
 
 <body>
 
-
-
-
-    <div class="menu1">
-        <div class="item"><b>NAM APPLE </b></div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars" style="color: black;"></i>
-        </a>
-
-        <ul>
-            <li>
-                <form>
-                    <input type="text" class="input" placeholder="Bạn muốn tìm gì?">
-
-                </form>
-            </li>
-            <li><a href="" class="item1">Trang Chủ</a></li>
-            <li><a href="" class="item1">Tin Tức</a></li>
-            <li><a href="" class="item1">Liên Hệ</a></li>
-            <li><a href="" class="item1">Chăm Sóc Khách Hàng</a></li>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b class="item">NAM APPLE</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"> 
+            <a class="nav-link active" aria-current="page" href="./home.html">Trang Chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./sanpham.html">Sản Phẩm </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./taikhoan.html">Tài Khoản</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Chăm Sóc Khách Hàng</a>
+          </li>
         </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
+  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./home1.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./home2.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./home3.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./home4.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./home5.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./home6.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+<!-- Tin Tức -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b> Tin Tức</b></h1>
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b><b class="item">NAM APPLE</b> luôn theo xu hướng </b></h1>
+      <p><span style="font-size:36px">Apple News</span> Ứng dụng News  thu thập tất cả các tin tức bạn muốn đọc từ những nguồn yêu thích của bạn, về các chủ đề bạn quan tâm nhất. Để cá nhân hóa News, bạn có thể chọn từ một bộ sưu tập các ấn bản (được gọi là kênh) và các chủ đề như Entertainment, Food và Science.</p>
+      <button class="button">Theo Dõi</button>
+    </div>
+    <div class="column-33">
+        <img src="./new1.jpeg" width="335" height="471">
+    </div>
+  </div>
+</div>
+
+<!-- Dịch Vụ -->
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+      <img src="./new2.png" alt="App" width="335" height="471">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Dịch Vụ</b></h1>
+      <h1 class="large-font" style="color:rgb(248, 150, 137);"><b><b class="item">NAM APPLE</b>  mang đến những dịch vụ tốt nhất từ APPLE</b></h1>
+      <p><span style="font-size:24px">Apple Care.</span> Đây là  chăm sóc thường xuyên, thoải mái cho khách hàng lựa chọn với bất kỳ sản phẩm đến từ nhà Apple như: Apple TV, iPad, Mac mini, iMac, MacBook, Mac Pro,…
+        Kết hợp cả bảo hành, hỗ trợ kỹ thuật và nhận tư vấn từ các chuyên gia Apple, 3 trong 1 mà giá cả phải chăng. Đặc biệt, thời gian bảo hành lên tới 1 năm và được hỗ trợ kỹ thuật trong vòng 90 ngày, đảm bảo sẽ mang lại nhiều tiện ích tới khách hàng.</p>
+      <button class="button" style="background-color: rgb(248, 150, 137)">Tìm Hiểu</button>
+    </div>
+  </div>
+</div>
+  
+<!-- Sản Phẩm  -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Sản Phẩm</b></h1>
+      <h1 class="large-font" style="color:rgb(243, 233, 121);"><b><b class="item">NAM APPLE</b> là vương quốc đồ TÁO</b></h1>
+      <p><span style="font-size:36px">Apple Ecosystem</span> Hệ sinh thái Apple bao gồm tất cả những sản phẩm do Apple sản xuất: MacBook, iPhone, Apple Watch,.. tất cả những sản phẩm đó hỗ trợ lẫn nhau, tại điều kiện tốt cho người dùng trải nghiệm tốt nhất. Cùng <b class="item">NAM APPLE</b> điểm qua những sản phẩm tiêu biểu có trong hệ sinh thái Apple nhé!</p>
+      <button class="button" style="background-color: rgb(243, 233, 121);"><a href="./sanpham.html" style="text-decoration: none; color: #f1f1f1;">Khám Phá</a></button>
+    </div>
+    <div class="column-33">
+        <img src="./new3.webp" width="335" height="471" >
+    </div>
+  </div>
+</div>
+<!-- Tài Khoản  -->
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+      <img src="./new4.png" alt="App" width="335" height="471">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Tài Khoản</b></h1>
+      <h1 class="large-font" style="color:rgb(137, 196, 248);"><b> Riêng Tư & Bảo Mật </b></h1>
+      <p><span style="font-size:24px">ID Apple  </span> ID Apple là tài khoản cá nhân bạn sử dụng để truy cập các dịch vụ của Apple như App Store, iCloud, Tin nhắn, Cửa hàng trực tuyến Apple, FaceTime và nhiều dịch vụ khác. Tài khoản này bao gồm thông tin mà bạn sử dụng để đăng nhập cũng như toàn bộ các chi tiết về liên hệ, thanh toán và bảo mật mà bạn sẽ sử dụng cho các dịch vụ Apple.</p>
+      <button class="button" style="background-color: rgb(137, 196, 248)"><a href="./taikhoan.html" style="text-decoration: none; color: #f1f1f1;">Truy Cập</a> </button>
+    </div>
+  </div>
+</div>
+  <center>
+    <p class="idea"><b>HỆ THỐNG CỬA HÀNG </b></p><br>
+</center>
+
+  <div class="menu1">
+    <div class="anh1">
+      <b class="item"  >NAM APPLE</b>
+      <div ><b  >Chi nhánh  HÀ NỘI</b></div>
+       
+        
 
     </div>
-    <div id="myLinks" class="none">
-        <ul>
-            <li><a href="" class="item1">Trang Chủ</a></li>
-            <li><a href="" class="item1">Tin Tức</a></li>
-            <li><a href="" class="item1">Liên Hệ</a></li>
-            <li><a href="" class="item1">Chăm Sóc Khách Hàng</a></li>
-        </ul>
+
+    <div class="anh1">
+      <b class="item">NAM APPLE</b>
+      <div><b>Chi nhánh  ĐÀ NẴNG</b></div>
+      
+       
+        
+
     </div>
-    <center>
-        <p class="idea"><b>IPHONE</b></p><br>
-    </center>
+    <div class="anh1">
+      <b class="item">NAM APPLE</b>
+      <div><b>Chi nhánh  THÀNH PHỐ HỒ CHÍ MINH</b></div>
+      
+        
 
-    <div class="menu2">
-        <div class="anh">
-            <img src="./14pro.png" alt="">
-            <div class="anhcon2"><b>iPhone 14 Pro 128GB </b></div>
-            <div><strike>30.990.000₫</strike></div>
-            <div class="price"> 25.690.000₫</div>
-
-        </div>
-
-        <div class="anh">
-            <img src="./14prm.png" alt="">
-            <div class="anhcon2"><b>iPhone 14 Pro Max 128GB </b></div>
-            <div><strike>34.490.000₫</strike></div>
-            <div class="price"> 28.190.000₫
-            </div>
-
-        </div>
-        <div class="anh">
-            <img src="./ip14.png" alt="">
-            <div class="anhcon2"><b>iPhone 14 128GB - Yellow </b></div>
-            <div><strike>24.990.000₫</strike></div>
-            <div class="price"> 20.590.000₫</div>
-
-        </div>
-        <div class="anh">
-            <img src="./ip13.png" alt="">
-            <div class="anhcon2"><b>iPhone 13 </b></div>
-            <div><strike>24.990.000₫</strike></div>
-            <div class="price"> 18.390.000₫
-            </div>
-
-        </div>
     </div>
-    <center>
-        <p class="idea1">Xem tất cả Iphone .... </p><br>
-    </center>
+    
+</div>
 
-    <center>
-        <p class="idea"><b>IPAD</b></p><br>
-    </center>
-    <div class="menu2">
-        <div class="anh">
-            <img src="./ipa1.png" alt="">
-            <div class="anhcon2"><b>iPad Pro M2 12.9 inch WiFi 128GB </b></div>
-            <div><strike>31.990.000₫</strike></div>
-            <div class="price"> 28.590.000₫
-            </div>
-
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6 class="item">NamApple</h6>
+          <p class="text-justify"> </i>Năm 2023, <b class="item">NamApple</b> trở thành đại lý ủy quyền của Apple. Chúng
+            tôi phát triển chuỗi cửa hàng tiêu chuẩn và Apple Mono Store nhằm mang đến trải nghiệm tốt nhất về sản phẩm
+            và dịch vụ của Apple cho người dùng Việt Nam.</p>
         </div>
 
-        <div class="anh">
-            <img src="./ipa2.jpg" alt="">
-            <div class="anhcon2"><b>iPad mini 6 WiFi </b></div>
-            <div><strike>14.990.000₫</strike></div>
-            <div class="price"> 12.690.000₫</div>
+        <div class="col-xs-6 col-md-3">
+          <h6>Thông Tin </h6>
+          <ul class="footer-links">
+            <li><a href="" > Gioi Thiệu</a></li>
+            <li><a href="">Tin Tức</a></li>
+            <li><a href="">Check Email</a></li>
+            <li><a href="">Bảo Hành</a></li>
+            <li><a href="">Sửa Chữa</a></li>
+            <li><a href="">Tuyển Dụng</a></li>
+          </ul>
+        </div>
 
+        <div class="col-xs-6 col-md-3">
+          <h6> Chính Sách </h6>
+          <ul class="footer-links">
+            <li><a href="">Thu Cũ</a></li>
+            <li><a href="">Đổi mới </a></li>
+            <li><a href="">Giao Hàng</a></li>
+            <li><a href="">Đổi Trả</a></li>
+            <li><a href="">Trả Góp</a></li>
+          </ul>
         </div>
-        <div class="anh">
-            <img src="ipa3.jpg" alt="">
-            <div class="anhcon2"><b>iPad 10 WiFi 64GB </b></div>
-            <div><strike>12.990.000₫</strike></div>
-            <div class="price"> 11.390.000₫
-            </div>
-
-        </div>
-        <div class="anh">
-            <img src="./ipa4.jpg" alt="">
-            <div class="anhcon2"><b>
-                    iPad Air 5 WiFi + Cellular </b></div>
-            <div><strike>20.990.000₫</strike></div>
-            <div class="price">17.490.000₫
-            </div>
-        </div>
+      </div>
+      <hr>
     </div>
-    <center>
-        <p class="idea1">Xem tất cả Ipad .... </p><br>
-    </center>
-    <center>
-        <p class="idea"><b>APPLE WATCH</b></p><br>
-    </center>
-    <div class="menu2">
-        <div class="anh">
-            <img src="./w1.jpeg" alt="">
-            <div class="anhcon2"><b>Apple Watch Series 8 Nhôm GPS </b></div>
-            <div><strike>22.990.000₫</strike></div>
-            <div class="price"> 21.990.000₫</div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+
+          </p>
         </div>
 
-        <div class="anh">
-            <img src="w2.png" alt="">
-            <div class="anhcon2"><b>Apple Watch Ultra LTE 49mm Alpine Loop size S </b></div>
 
-            <div><strike>23.990.000₫</strike></div>
-            <div class="price">19.490.000₫</div>
-        </div>
-        <div class="anh">
-            <img src="./w3.png" alt="">
-            <div class="anhcon2"><b>Apple Watch Series 3 Nhôm </b></div>
-            <div><strike>9.990.000₫</strike></div>
-            <div class="price"> 5.990.000₫ </div>
-        </div>
-        <div class="anh">
-            <img src="w4.jpg" alt="">
-            <div class="anhcon2"><b>Apple Watch SE 2022 LTE </b></div>
-            <div><strike>8.990.000₫</strike></div>
-            <div class="price">7.490.000₫</div>
-
-        </div>
+      </div>
     </div>
-    <center>
-        <p class="idea1">Xem tất cả Apple Watch .... </p><br>
-    </center>
-
-
-    <center>
-        <p class="idea"><b>MAC</b></p><br>
-    </center>
-
-    <div class="menu2">
-        <div class="anh">
-            <img src="./mac1.jpeg" alt="">
-            <div class="anhcon2"><b>MacBook Pro 16 inch M2 Pro (19 Core| 16GB| 1TB)</b></div>
-            <div><strike>65.990.000₫</strike></div>
-            <div class="price"> 64.790.000₫</div>
-        </div>
-
-        <div class="anh">
-            <img src="mac2.jpg" alt="">
-            <div class="anhcon2"><b>iMac 24 inch M1 2021 8-Core GPU</b></div>
-
-            <div><strike>42.790.000₫</strike></div>
-            <div class="price"> 36.390.000₫</div>
-        </div>
-        <div class="anh">
-            <img src="mac3.jpg" alt="">
-            <div class="anhcon2"><b>MacBook Air M1 2020 8-Core GPU</b></div>
-            <div><strike>36.990.000₫</strike></div>
-            <div class="price"> 31.390.000₫</div>
-        </div>
-        <div class="anh">
-            <img src="mac4.jpg" alt="">
-            <div class="anhcon2"><b>Mac mini M1 2020</b></div>
-            <div><strike>19.290.000₫</strike></div>
-            <div class="price"> 16.290.000₫</div>
-        </div>
-    </div>
-    <center>
-        <p class="idea1">Xem tất cả Mac .... </p><br>
-    </center>
+  </footer>
 
 
 
-    <div class="footer">
-
-        <div class="f0">
-            <a href="" class="f01">
-                <h3>Thông Tin</h3>
-            </a>
-            <a href="" class="f1">Tin Tức</a>|
-            <a href="" class="f1">Bảo Hành </a>|
-            <a href="" class="f1"> Sửa Chữa</a>|
-            <a href="" class="f1">Thanh Toán</a>|
-        </div>
-        <div class="f0">
-            <a href="" class="f01">
-                <h3> Chính Sách </h3>
-            </a>
-            <a href="" class="f1">Thu Cũ Đổi Mới</a>|
-            <a href="" class="f1">Giao Hàng </a>|
-            <a href="" class="f1"> Đổi Trả</a>|
-            <a href="" class="f1">Trả Góp</a>|
-        </div>
-
-        <div class="f0">
-            <a href="" class="f01">
-                <h3> Dịa Chỉ</h3>
-            </a>
-            <a href="" class="f1">Nhánh 1: khu vực Hà Nội và các tỉnh phía bắc</a>|
-            <a href="" class="f1">Nhánh 2: khu vực Hồ Chí Minh và các tỉnh phía nam </a>|
-        </div>
-        <script>
-
-
-            function myFunction() {
-                var x = document.getElementById("myLinks");
-
-                if (x.className === "none") {
-                    x.className += " show";
-                } else {
-                    x.className = "none";
-                }
-            }
-        </script>
 </body>
 
 </html>

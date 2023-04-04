@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chúc Mừng Sinh Nhật</title>
+	<style>
+		body {
+			background-color: #fff;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			font-size: 60px;
+			color: #f00;
+			margin-top: 100px;
+			animation: scale 2s ease-in-out infinite;
+		}
+		@keyframes scale {
+			0% {transform: scale(1);}
+			50% {transform: scale(1.2);}
+			100% {transform: scale(1);}
+		}
+		p {
+			font-size: 24px;
+			color: #666;
+			margin-top: 50px;
+			animation: slide 2s ease-in-out infinite;
+		}
+		@keyframes slide {
+			0% {transform: translateX(0);}
+			50% {transform: translateX(50px);}
+			100% {transform: translateX(0);}
+		}
+		button {
+			background-color: #f00;
+			border: 0;
+			color: #fff;
+			font-size: 24px;
+			padding: 15px 30px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 50px;
+			box-shadow: 2px 2px 5px #000;
+			animation: blink 2s ease-in-out infinite;
+		}
+		@keyframes blink {
+			0% {opacity: 1;}
+			50% {opacity: 0.5;}
+			100% {opacity: 1;}
+		}
+	</style>
+</head>
+<body>
+	<h1>Chúc Mừng Sinh Nhật!</h1>
+	<p> “Chúc mừng sinh nhật mẹ yêu. Cảm ơn mẹ đã luôn hi sinh và vất vả nuôi dưỡng con trưởng thành. Chúc những điều tốt đẹp nhất sẽ đến với mẹ và con yêu mẹ rất nhiều.”</p>
+	<button onclick="alert('Happy Birthday!')">QUÀ XỊN </button>
+	<script>
+		window.onload = function() {
+			alert("Chúc mừng sinh nhật MẸ NGỌC!");
+		}
+	</script>
+</body>
+</html>
